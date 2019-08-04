@@ -25,7 +25,7 @@ Using this algorithm, the machine is trained to make specific decisions. It work
 8. Random Forest
 9. Dimensionality Reduction Algorithms
 10. Gradient Boosting algorithms
-... GBM
-... XGBoost
-... LightGBM
-... CatBoost
+  + GBM
+  + XGBoost
+  + LightGBM
+  + CatBoost
