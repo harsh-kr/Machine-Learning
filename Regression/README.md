@@ -28,3 +28,28 @@ for linear regression with only one feature, i.e., only one independent variable
 <br> This equation is called a simple linear regression equation, which represents a straight line, where ‘Θ0’ is the intercept, 
 ‘Θ1’ is the slope of the line. <br><br>
 ![Image](https://sebastianraschka.com/images/faq/closed-form-vs-gd/simple_regression.png)
+<br>
+<br>
+# Polynomial Regression
+What happens if we know that our data is correlated, but the relationship doesn’t look linear? So hence depending on what the data looks like, we can do a polynomial regression on the data to fit a polynomial equation to it. <br>
+![Lin Reg](https://miro.medium.com/max/500/1*xz_haBuJRSI2DaveNk-3gw.gif)
+<br>
+Hence If we try to use a simple linear regression in the above graph then the linear regression line won’t fit very well. It is very difficult to fit a linear regression line in the above graph with a low value of error. Hence we can try to use the polynomial regression to fit a polynomial line so that we can achieve a minimum error or minimum cost function. The equation of the polynomial regression for the above graph data would be: <br>
+y = θo + θ₁x₁ + θ₂ x₁² <br><br>
+This is the general equation of a polynomial regression : <br>
+Y=θo + θ₁X + θ₂X² + … + θₘXᵐ + residual error <br>
+![Poly Reg](https://miro.medium.com/max/500/1*Cat1swI8xmNYui6w5AYp8A.gif)
+<br> <br>
+# Support Vector Regression
+Support Vector Machine can be applied not only to classification problems but also to the case of regression. Still it contains all the main features that characterize maximum margin algorithm: a non-linear function is leaned by linear learning machine mapping into high dimensional kernel induced feature space. The capacity of the system is controlled by parameters that do not depend on the dimensionality of feature space.In simple regression we try to minimise the error rate. While in SVR we try to fit the error within a certain threshold. <br>
+The terms related to SVR that one should know are :
+1. Kernel: The function used to map a lower dimensional data into a higher dimensional data.
+2. Hyper Plane: In SVM this is basically the separation line between the data classes. Although in SVR we are going to define it as the line that will will help us predict the continuous value or target value
+3. Boundary line: In SVM there are two lines other than Hyper Plane which creates a margin . The support vectors can be on the Boundary lines or outside it. This boundary line separates the two classes. In SVR the concept is same.
+4. Support vectors: This are the data points which are closest to the boundary. The distance of the points is minimum or least.
+<br>
+
+![SVR](https://miro.medium.com/max/512/1*fVCEP_qxSWYwKcpkt2Xk2w.png)
+
+<br>
+All the points are within the boundary line(Red Line). Our objective when we are moving on with SVR is to basically consider the points that are within the boundary line. Our best fit line is the line hyperplane that has maximum number of points.
