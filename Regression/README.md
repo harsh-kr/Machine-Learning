@@ -53,3 +53,32 @@ The terms related to SVR that one should know are :
 
 <br>
 All the points are within the boundary line(Red Line). Our objective when we are moving on with SVR is to basically consider the points that are within the boundary line. Our best fit line is the line hyperplane that has maximum number of points.
+<br> <br>
+
+# Decision Tree Regression
+
+![DTReg](https://acadgild.com/blog/wp-content/uploads/2018/09/Decision-tree.jpg)
+
+<br>
+
+### What is CART? <br>
+CA - Classification Trees <br>
+RT - Regression Trees <br> <br>
+### What kind of linear regression is Decision Tree Regression? <br>
+Non-linear regression <br><br>
+### What is the default criterion for Decision Tree Regression class? <br>
+Default criterion is MSE (Mean Square error). MSE = the square difference b/w the prediction and the real result and taking the sum of these differences to measure the error. <br> <br>
+### What kind of model is Decision Tree Regression model falls into? <br>
+Non-continuous model <br> <br>
+### Why do we need to plot with high resolution data set for visualizing Decision Tree Regression? <br>
+In Decision Tree Regression, the predicted values are obtained as per the average of that particular interval. Thus, without a high resolution, the plot would not show the actual representation of the fact that the prediction is based on averages in that particular interval. <br> <br>
+### Will Decision Tree Regression best suit for 1D models or 2D models? <br> 
+Decision Tree Regression models are best suited for 2D models. <br> <br>
+
+![DTreg](https://miro.medium.com/max/700/1*Oln4_uIkjKd-wAyL3a-upw.png)
+
+![DTreg2](https://miro.medium.com/max/700/1*Xb_S8tBQ_CZbyfd_7duaAQ.png)
+
+![DTreg3](https://miro.medium.com/max/700/1*IEJReGjY_hC1DslXZ7kZFg.png)
+
+![DTreg4](https://miro.medium.com/max/700/1*hF572qULmK0_xA37tujkYg.png)
