@@ -65,3 +65,47 @@ The logistic function is a Sigmoid function, which takes any real value between 
 And if we plot it, the graph will be S curve, <br>
 
 ![Graph](https://miro.medium.com/max/355/1*DmZ86NmgX2syazCKtkcJsA.png)
+
+<br> <br>
+
+## Naive Bayes Classification
+A Naive Bayes classifier is a probabilistic machine learning model that’s used for classification task. The crux of the classifier is based on the Bayes theorem. <br>
+#### Bayes Theorem:
+![NB](https://miro.medium.com/max/510/1*tjcmj9cDQ-rHXAtxCu5bRQ.png) 
+
+<br>
+Using Bayes theorem, we can find the probability of A happening, given that B has occurred. Here, B is the evidence and A is the hypothesis. The assumption made here is that the predictors/features are independent. That is presence of one particular feature does not affect the other. Hence it is called naive. <br>
+
+#### Types of Naive Bayes Classifier:
+1. Multinomial Naive Bayes:
+This is mostly used for document classification problem, i.e whether a document belongs to the category of sports, politics, technology etc. The features/predictors used by the classifier are the frequency of the words present in the document. <br>
+2. Bernoulli Naive Bayes:
+This is similar to the multinomial naive bayes but the predictors are boolean variables. The parameters that we use to predict the class variable take up only values yes or no, for example if a word occurs in the text or not. <br>
+3. Gaussian Naive Bayes:
+When the predictors take up a continuous value and are not discrete, we assume that these values are sampled from a gaussian distribution. <br>
+![GNB](https://miro.medium.com/max/422/1*AYsUOvPkgxe3j1tEj2lQbg.gif)
+
+<br>
+Naive Bayes algorithms are mostly used in sentiment analysis, spam filtering, recommendation systems etc. They are fast and easy to implement but their biggest disadvantage is that the requirement of predictors to be independent. In most of the real life cases, the predictors are dependent, this hinders the performance of the classifier
+
+## Support Vector Machine
+“Support Vector Machine” (SVM) is a supervised machine learning algorithm which can be used for both classification or regression challenges. However,  it is mostly used in classification problems. In this algorithm, we plot each data item as a point in n-dimensional space (where n is number of features you have) with the value of each feature being the value of a particular coordinate. Then, we perform classification by finding the hyper-plane that differentiate the two classes very well.
+
+<br>
+
+![SVM](https://miro.medium.com/max/300/0*9jEWNXTAao7phK-5.png)
+
+<br>
+
+![SVM2](https://miro.medium.com/max/300/0*0o8xIA4k3gXUDCFU.png)
+
+<br>
+
+Hyperplanes are decision boundaries that help classify the data points. Data points falling on either side of the hyperplane can be attributed to different classes. Also, the dimension of the hyperplane depends upon the number of features. If the number of input features is 2, then the hyperplane is just a line. If the number of input features is 3, then the hyperplane becomes a two-dimensional plane. It becomes difficult to imagine when the number of features exceeds 3.
+
+![SVM3](https://miro.medium.com/max/1418/1*ZpkLQf2FNfzfH4HXeMw4MQ.png) <br>
+![SVM4](https://miro.medium.com/max/755/0*ecA4Ls8kBYSM5nza.jpg)
+
+<br>
+
+Support vectors are data points that are closer to the hyperplane and influence the position and orientation of the hyperplane. Using these support vectors, we maximize the margin of the classifier. Deleting the support vectors will change the position of the hyperplane. These are the points that help us build our SVM.
